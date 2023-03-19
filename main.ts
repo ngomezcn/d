@@ -25,11 +25,11 @@ namespace SAP {
     }
 
     /**
-         * Address led
-         */
+    * Address led
+    */
     //% blockId=foo_B
-    //% block="foo with $callback"
-    export function foo(callback: any) {
+    //% block="set $callback to $value"
+    export function foo(callback: any, value: any) {
         console.log('foo() function called!');
     }
 }
