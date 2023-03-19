@@ -4,36 +4,28 @@ enum BusinessPartnerE {
     //% block="CardName"
     CardName
 }
-
-enum OrderE {
-    //% block="DocEntry"
-    DocEntry,
-    //% block="DocNum"
-    DocNum
+class Greeter {
+    greeting: string;
 }
+
 namespace SAP {
     //% blockId=BusinessPartner_B
-    //% block="BusinessPartner $sound"
-    export function BusinessPartner(sound?: BusinessPartnerE): any {
+    //% block="BusinessPartner $m"
+    export function BusinessPartner(m?: BusinessPartnerE): any {
         return 1
     }
 
-    //% blockId=Order_B
-    //% block="Order $sound"
-    export function Order(sound?: OrderE): any {
+    //% blockId=wtf
+    //% block="wtf $m"
+    export function wtf(m?: Greeter): any {
         return 1
     }
-
-  
 }
 
 namespace Variables {
-    /**
-    * Address led
-    */
     //% blockId=foo_B
-    //% block="set $callback to $value"
-    export function foo(callback: any, value: any) {
+    //% block="set $c to $value"
+    export function setTo(c: any, value: any) {
         console.log('foo() function called!');
     }
 }
