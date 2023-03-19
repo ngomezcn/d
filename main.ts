@@ -11,8 +11,8 @@ namespace SAP {
     //% blockId=BusinessPartner_B
     //% block="BusinessPartner $sound"
     //% expandableArgumentMode="toggle"
-    export function test(sound?: AlarmSound) : number {
-       return 1
+    export function test(sound?: AlarmSound): number {
+        return 1
     }
 
     /**
@@ -24,13 +24,26 @@ namespace SAP {
         console.log('foo() function called!');
         callback();
     }
+}
+
+namespace Salesforce {
+    /**
+     * Address led
+     */
+    //% blockId=BusinessPartner_B
+    //% block="BusinessPartner $sound"
+    //% expandableArgumentMode="toggle"
+    export function test(sound?: AlarmSound): number {
+        return 1
+    }
 
     /**
-             * Address led
-             */
-    //% blockId=bar_B
-    //% block="bar"
-    export function bar() {
-        console.log('bar() function called!');
+         * Address led
+         */
+    //% blockId=foo_B
+    //% block="foo with $callback"
+    export function foo(callback: Function) {
+        console.log('foo() function called!');
+        callback();
     }
 }
