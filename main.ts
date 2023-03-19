@@ -24,6 +24,10 @@ namespace SAP {
         return 1
     }
 
+  
+}
+
+namespace Variables {
     /**
     * Address led
     */
