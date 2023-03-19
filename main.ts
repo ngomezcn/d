@@ -11,7 +11,7 @@ namespace SAP {
     //% blockId=BusinessPartner_B
     //% block="BusinessPartner $sound"
     //% expandableArgumentMode="toggle"
-    export function test(sound?: AlarmSound) {
-       
+    export function test(sound?: AlarmSound) : number {
+       return 1
     }
 }
