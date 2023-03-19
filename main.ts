@@ -7,7 +7,6 @@ enum AlarmSound {
 namespace SAP {
     //% blockId=BusinessPartner_B
     //% block="BusinessPartner $sound"
-    //% expandableArgumentMode="toggle"
     export function BusinessPartner(sound?: AlarmSound): number {
         return 1
     }
