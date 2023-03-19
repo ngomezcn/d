@@ -9,8 +9,9 @@ namespace SAP {
      * Address led
      */
     //% blockId=testB
-    //% block="plot at $x"
-    export function test(sound?: AlarmSound) : number {
-        return sound
+    //% block="plot at $sound"
+    //% expandableArgumentMode="toggle"
+    export function test(sound?: AlarmSound) {
+       
     }
 }
