@@ -1,15 +1,15 @@
 enum AlarmSound {
-    //% block="annoy"
-    Annoy,
-    //% block="alert"
-    Alert
+    //% block="CardCode"
+    CardCode,
+    //% block="CardName"
+    CardName
 }
 namespace SAP {
     /**
      * Address led
      */
-    //% blockId=testB
-    //% block="plot at $sound"
+    //% blockId=BusinessPartner_B
+    //% block="BusinessPartner $sound"
     //% expandableArgumentMode="toggle"
     export function test(sound?: AlarmSound) {
        
